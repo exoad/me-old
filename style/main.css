@@ -62,9 +62,14 @@ body::-webkit-scrollbar {
   top: 0;
   left: 0;
   z-index: -1;
-  filter: brightness(var(--background-opacity));
+  -webkit-filter: brightness(var(--background-opacity));
+          filter: brightness(var(--background-opacity));
+  transition: background-image 0.65s ease-in-out, opacity 0.65s ease-in-out,
+    -webkit-filter 0.65s ease-in-out;
   transition: background-image 0.65s ease-in-out, opacity 0.65s ease-in-out,
     filter 0.65s ease-in-out;
+  transition: background-image 0.65s ease-in-out, opacity 0.65s ease-in-out,
+    filter 0.65s ease-in-out, -webkit-filter 0.65s ease-in-out;
 }
 
 .bg-image-transition {
