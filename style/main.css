@@ -19,6 +19,7 @@ body::-webkit-scrollbar {
 }
 
 .title-text {
+  user-select: none;
   font-family: 'Gluten';
   letter-spacing: 4px;
   font-weight: 700;
@@ -37,7 +38,7 @@ body::-webkit-scrollbar {
 .menu-bar {
   display: flex;
   gap: 10px;
-  padding: 20px;
+  padding: 13px;
 }
 
 .content {

@@ -1,0 +1,1 @@
+1. High contrast themes or extensions like dark reader can make the background image not appear.
