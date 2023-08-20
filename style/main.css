@@ -11,6 +11,7 @@ body {
   scroll-behavior: smooth;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  transition: background-color 0.65s cubic-bezier(.18, .61, .68, .12), opacity 0.65s cubic-bezier(.18, .61, .68, .12);
 }
 
 body::-webkit-scrollbar {
@@ -31,8 +32,6 @@ body::-webkit-scrollbar {
 }
 
 .bg-image {
-  filter: blur(var(--background-blur-factor));
-  -webkit-filter: blur(var(--background-blur-factor));
   height: 100vh;
   width: 100%;
   background-image: var(--background-img);
@@ -43,7 +42,7 @@ body::-webkit-scrollbar {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: -1;
   transition: background-image 0.65s cubic-bezier(.18, .61, .68, .12), opacity 0.65s cubic-bezier(.18, .61, .68, .12);
 }
 
