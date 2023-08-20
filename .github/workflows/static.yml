@@ -1,4 +1,4 @@
-name: Deploy static pages
+name: "[RUN] Deploy static pages"
 
 on:
   workflow_dispatch:
