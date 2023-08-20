@@ -17,12 +17,17 @@ function themeController_toggleLightMode() {
     "--theme-antibg",
     isLightMode ? "#FFF" : "#000"
   );
-  
+  document.documentElement.style.setProperty(
+    "--theme-body-transparency",
+    isLightMode ? "rgba(0, 0, 0, 0.266)" : "rgba(0, 0, 0, 0.144)"
+  );
   let themeIcon = document.getElementById("theme-icon");
   themeIcon.src = isLightMode
     ? "./assets/icons/theme-light-sun.svg"
     : "./assets/icons/theme-dark-moon.svg";
-  themeIcon.title = isLightMode ? "Let there be light!" : "Let there be darkness"
+  themeIcon.title = isLightMode
+    ? "Let there be light!"
+    : "Let there be darkness";
   console.log(
     "[THEME_DATA]: isLight: " +
       isLightMode +

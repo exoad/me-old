@@ -2,7 +2,7 @@
 @import "colors.css";
 
 body {
-  background-color: var(--transparent);
+  background-color: var(--theme-body-transparency);
 }
 
 #page-content {
