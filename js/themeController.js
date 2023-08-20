@@ -1,23 +1,12 @@
 var isLightMode = false;
 
 function themeController_toggleLightMode() {
-  document.documentElement.style.setProperty(
-    "--theme-fg",
-    isLightMode ? "#FFF" : "#000"
-  );
-  document.documentElement.style.setProperty(
-    "--theme-bg",
-    isLightMode ? "#000" : "#FFF"
-  );
-  document.documentElement.style.setProperty(
-    "--theme-antifg",
-    isLightMode ? "#000" : "#FFF"
-  );
-  document.documentElement.style.setProperty(
-    "--theme-antibg",
-    isLightMode ? "#FFF" : "#000"
-  );
-  document.documentElement.style.setProperty(
+  let docEleStyle = document.documentElement.style;
+  docEleStyle.setProperty("--theme-fg", isLightMode ? "#FFF" : "#000");
+  docEleStyle.setProperty("--theme-bg", isLightMode ? "#000" : "#FFF");
+  docEleStyle.setProperty("--theme-antifg", isLightMode ? "#000" : "#FFF");
+  docEleStyle.setProperty("--theme-antibg", isLightMode ? "#FFF" : "#000");
+  docEleStyle.setProperty(
     "--theme-body-transparency",
     isLightMode ? "rgba(0, 0, 0, 0.266)" : "rgba(0, 0, 0, 0.144)"
   );
