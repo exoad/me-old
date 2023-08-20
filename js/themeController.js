@@ -8,8 +8,19 @@ function themeController_toggleLightMode() {
   docEleStyle.setProperty("--theme-antibg", isLightMode ? "#FFF" : "#000");
   docEleStyle.setProperty(
     "--theme-body-transparency",
-    isLightMode ? "rgba(0, 0, 0, 0.266)" : "rgba(0, 0, 0, 0.144)"
+    isLightMode ? "rgba(0, 0, 0, 0.205)" : "rgba(0, 0, 0, 0.144)"
   );
+  docEleStyle.setProperty(
+    "--background-img",
+    isLightMode
+      ? "url(../assets/images/bg-dark.webp)"
+      : "url(../assets/images/bg-light.webp)"
+  );
+
+  document.querySelector(".bg-image").classList.add("bg-image-transition");
+  setTimeout(function () {
+    document.querySelector(".bg-image").classList.remove("bg-image-transition");
+  }, 10);
   let themeIcon = document.getElementById("theme-icon");
   themeIcon.src = isLightMode
     ? "./assets/icons/theme-light-sun.svg"
@@ -17,11 +28,5 @@ function themeController_toggleLightMode() {
   themeIcon.title = isLightMode
     ? "Let there be light!"
     : "Let there be darkness";
-  console.log(
-    "[THEME_DATA]: isLight: " +
-      isLightMode +
-      " => " +
-      document.getElementById("theme-button").innerHTML
-  );
   isLightMode = !isLightMode;
 }

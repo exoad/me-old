@@ -2,24 +2,53 @@
 @import "colors.css";
 
 body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: var(--theme-bg);
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.page-content {
   background-color: var(--theme-body-transparency);
+  padding: 20px;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
 }
 
-#page-content {
-  z-index: 0;
+.content {
+  background-color: var(--theme-bg);
+
 }
 
-#bg-image {
+.bg-image {
   filter: blur(var(--background-blur-factor));
   -webkit-filter: blur(var(--background-blur-factor));
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-image: var(--background-img);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: background-image 0.65s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.65s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.bg-image-transition {
+  opacity: 0;
 }
 
 .light-mode {
@@ -54,7 +83,7 @@ body {
   padding: 6px;
   font-family: "Poppins", sans-serif;
   border-radius: 10px;
-  position: absolute;
+  position: fixed;
   left: 1;
   top: 1;
   font-weight: 700;
