@@ -16,7 +16,6 @@ function themeController_toggleLightMode() {
       ? "url(../assets/images/bg-dark.webp)"
       : "url(../assets/images/bg-light.webp)"
   );
-
   document.querySelector(".bg-image").classList.add("bg-image-transition");
   setTimeout(function () {
     document.querySelector(".bg-image").classList.remove("bg-image-transition");

@@ -44,7 +44,7 @@ body::-webkit-scrollbar {
   top: 0;
   left: 0;
   z-index: 0;
-  transition: background-image 0.65s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.65s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: background-image 0.65s cubic-bezier(.18, .61, .68, .12), opacity 0.65s cubic-bezier(.18, .61, .68, .12);
 }
 
 .bg-image-transition {
@@ -54,38 +54,4 @@ body::-webkit-scrollbar {
 .light-mode {
   background-color: var(--theme-bg);
   color: var(--theme-fg);
-}
-
-.theme-box {
-  background-color: var(--transparent);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-color: var(--theme-fg);
-  cursor: pointer;
-}
-
-#theme-icon {
-  color: var(--theme-icon-yellow);
-  width: 1.5em;
-}
-
-#theme-label {
-  color: var(--theme-anti);
-}
-
-#theme-button {
-  background-color: var(--semi-transparent);
-  border: 2.5px solid var(--semi-transparent);
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  padding: 6px;
-  font-family: "Poppins", sans-serif;
-  border-radius: 10px;
-  position: fixed;
-  left: 1;
-  top: 1;
-  font-weight: 700;
-  font-size: 15px;
 }

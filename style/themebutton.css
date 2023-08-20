@@ -1,0 +1,35 @@
+@import "colors.css";
+
+.theme-box {
+  background-color: var(--transparent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: var(--theme-fg);
+  cursor: pointer;
+}
+
+#theme-icon {
+  color: var(--theme-icon-yellow);
+  width: 1.5em;
+}
+
+#theme-label {
+  color: var(--theme-anti);
+}
+
+#theme-button {
+  background-color: var(--semi-transparent);
+  border: 2.5px solid var(--semi-transparent);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding: 6px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+  position: fixed;
+  left: 1;
+  top: 1;
+  font-weight: 700;
+  font-size: 15px;
+}
