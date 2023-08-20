@@ -5,6 +5,7 @@
   --theme-antibg: #FFF;
   --theme-body-transparency: rgba(0, 0, 0, 0.205);
   --transparent: rgba(0, 0, 0, 0);
+  --background-opacity: 50%;
   --semi-transparent: rgba(136, 136, 136, 0.659);
   --theme-pink: #da2967;
   --theme-green: #31d354;

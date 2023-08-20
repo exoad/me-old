@@ -18,7 +18,6 @@
 }
 
 #theme-button {
-  outline: none;
   background-color: var(--semi-transparent);
   border: 2.5px solid var(--semi-transparent);
   border-top: 0;

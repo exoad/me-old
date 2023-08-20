@@ -14,33 +14,26 @@
     <!-- Insert files and stuff -->
     <link rel="stylesheet" href="./style/main.css" />
     <link rel="stylesheet" href="./style/themebutton.css" />
-    <link rel="stylesheet" href="./style/macro.css" />
     <link rel="stylesheet" href="./style/colors.css" />
     <script type="text/javascript" src="./js/themeController.js"></script>
   </head>
 
   <body>
-    <div class="row">
-      <div class="title-page">
-        <div class="bg-image">
-          <img id="bg-blurred" src="./assets/images/bg-dark.webp" />
-        </div>
-        <div class="title-text">exoad</div>
-        <div class="menu-bar affixed-tl">
-          <button
-            id="theme-button"
-            onclick="themeController_toggleLightMode()"
-            class="theme-box"
-            title="Let there be light!"
-          >
-            <img src="./assets/icons/theme-light-sun.svg" id="theme-icon" />
-          </button>
-          <button id="theme-button">
-            <img src="./assets/icons/thumbs-up.svg" id="theme-icon" />
-          </button>
-        </div>
-      </div>
-      <div class="content">x x x x xx xxx</div>
+
+    <div class="bg-image"></div>
+    <div class="title-text">exoad</div>
+    <div class="menu-bar">
+      <button
+        id="theme-button"
+        onclick="themeController_toggleLightMode()"
+        class="theme-box"
+        title="Let there be light!"
+      >
+        <img src="./assets/icons/theme-light-sun.svg" id="theme-icon" />
+      </button>
+      <button id="theme-button">
+        <img src="./assets/icons/thumbs-up.svg" id="theme-icon" />
+      </button>
     </div>
   </body>
 </html>

@@ -16,6 +16,7 @@ function themeController_toggleLightMode() {
       ? "url(../assets/images/bg-dark.webp)"
       : "url(../assets/images/bg-light.webp)"
   );
+  docEleStyle.setProperty("--background-opacity", isLightMode ? "65%" : "85%");
   document.querySelector(".bg-image").classList.add("bg-image-transition");
   setTimeout(function () {
     document.querySelector(".bg-image").classList.remove("bg-image-transition");
@@ -27,7 +28,5 @@ function themeController_toggleLightMode() {
   themeIcon.title = isLightMode
     ? "Let there be light!"
     : "Let there be darkness";
-  document.getElementById("bg-blurred").src =
-    "../assets/images/" + (isLightMode ? "bg-dark.webp" : "bg-light.webp");
   isLightMode = !isLightMode;
 }
