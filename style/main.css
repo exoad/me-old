@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gluten&display=swap");
 @import "colors.css";
 
 body {
@@ -11,7 +11,10 @@ body {
   scroll-behavior: smooth;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  transition: background-color 0.65s cubic-bezier(.18, .61, .68, .12), opacity 0.65s cubic-bezier(.18, .61, .68, .12);
+  background-color: var(--theme-bg);
+  transition: background-color 0.65s cubic-bezier(0.18, 0.61, 0.68, 0.12),
+    opacity 0.65s cubic-bezier(0.18, 0.61, 0.68, 0.12);
+  display: flex;
 }
 
 body::-webkit-scrollbar {
@@ -19,8 +22,11 @@ body::-webkit-scrollbar {
 }
 
 .title-text {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
-  font-family: 'Gluten';
+  font-family: "Gluten";
   letter-spacing: 4px;
   font-weight: 700;
   color: var(--theme-fg);
@@ -33,6 +39,7 @@ body::-webkit-scrollbar {
   transform: translate(-50%, -50%);
   text-overflow: clip;
   text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.69);
+  transition: color 0.55s ease, opacity 0.55s ease;
 }
 
 .menu-bar {
@@ -44,11 +51,14 @@ body::-webkit-scrollbar {
 .content {
   /* used for page elements outside of the part with the bg-image */
   background-color: var(--theme-bg);
+  color: var(--theme-fg);
+  font-family: 'Poppins', sans-serif;
 }
 
 .bg-image {
   height: 100vh;
-  width: 100%;
+  width: 105%;
+  overflow: hidden;
   background-image: var(--background-img);
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,7 +68,8 @@ body::-webkit-scrollbar {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: background-image 0.65s cubic-bezier(.18, .61, .68, .12), opacity 0.65s cubic-bezier(.18, .61, .68, .12);
+  transition: background-image 0.55s ease-in-out,
+    opacity 0.55s ease-in-out, background-size 0.55s ease-in-out;
 }
 
 .bg-image-transition {
