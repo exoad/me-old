@@ -1,2 +1,3 @@
 - "Animation curve generator" : https://cubic-bezier.com
 - "JavaScript code minifier"  : https://www.toptal.com/developers/javascript-minifier
+- "CSS code minifier" : https://www.toptal.com/developers/cssminifier

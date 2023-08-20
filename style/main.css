@@ -18,6 +18,20 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.title-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--theme-fg);
+  font-size: 52px;
+  z-index: 2;
+  position: absolute;
+  text-align: center;
+  align-self: center;
+  top: 50%;
+  left: 50%;
+  text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.69);
+}
+
 .page-content {
   background-color: var(--theme-body-transparency);
   padding: 20px;
@@ -27,8 +41,8 @@ body::-webkit-scrollbar {
 }
 
 .content {
+  /* used for page elements outside of the part with the bg-image */
   background-color: var(--theme-bg);
-
 }
 
 .bg-image {
