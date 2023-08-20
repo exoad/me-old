@@ -23,6 +23,9 @@ function themeController_toggleLightMode() {
   setTimeout(function () {
     document.querySelector(".bg-image").classList.remove("bg-image-transition");
   }, 10);
+  document
+    .getElementById("invertable-icon")
+    .style.setProperty("filter", isLightMode ? "" : "invert()");
   let themeIcon = document.getElementById("theme-icon");
   themeIcon.src = isLightMode
     ? "./assets/icons/theme-light-sun.svg"
