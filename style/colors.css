@@ -10,6 +10,7 @@
   --theme-green: #31d354;
   --theme-orange: #eb9834;
   --theme-yellow: #ddc22c;
+  --theme-darker: #2c4159;
   --background-img: url("../assets/images/bg-dark.webp");
   --background-blur-factor: 10px;
 }

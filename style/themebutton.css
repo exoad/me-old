@@ -26,9 +26,8 @@
   padding: 6px;
   font-family: "Poppins", sans-serif;
   border-radius: 10px;
-  position: fixed;
-  left: 1;
-  top: 1;
   font-weight: 700;
   font-size: 15px;
+  height: 48px;
+  width: 48px;
 }
