@@ -27,5 +27,7 @@ function themeController_toggleLightMode() {
   themeIcon.title = isLightMode
     ? "Let there be light!"
     : "Let there be darkness";
+  document.getElementById("bg-blurred").src =
+    "../assets/images/" + (isLightMode ? "bg-dark.webp" : "bg-light.webp");
   isLightMode = !isLightMode;
 }
