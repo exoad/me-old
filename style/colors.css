@@ -1,0 +1,15 @@
+:root {
+  --theme-fg: #FFF;
+  --theme-bg: #000;
+  --theme-antifg: #000;
+  --theme-antibg: #FFF;
+  --theme-body-transparency: rgba(0, 0, 0, 0.322);
+  --transparent: rgba(0, 0, 0, 0);
+  --semi-transparent: rgba(136, 136, 136, 0.486);
+  --theme-pink: #da2967;
+  --theme-green: #31d354;
+  --theme-orange: #eb9834;
+  --theme-yellow: #ddc22c;
+  --background-img: url("../assets/images/bg-dark.webp");
+  --background-blur-factor: 5px;
+}
