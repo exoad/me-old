@@ -6,12 +6,6 @@ function themeController_toggleLightMode() {
   docEleStyle.setProperty("--theme-bg", isLightMode ? "#000" : "#FFF");
   docEleStyle.setProperty("--theme-antifg", isLightMode ? "#000" : "#FFF");
   docEleStyle.setProperty("--theme-antibg", isLightMode ? "#FFF" : "#000");
-  /*--------------------------------------------------------------- /
-  / docEleStyle.setProperty(                                        /
-  /   "--theme-body-transparency",                                  /
-  /   isLightMode ? "rgba(0, 0, 0, 0.205)" : "rgba(0, 0, 0, 0.144)" /
-  / );                                                              /
-  /----------------------------------------------------------------*/
   docEleStyle.setProperty(
     "--background-img",
     isLightMode

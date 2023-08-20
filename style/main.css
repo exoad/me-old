@@ -54,6 +54,7 @@ body::-webkit-scrollbar {
 .bg-image {
   height: 100vh;
   width: 100%;
+  display: inline-block;
   background-image: var(--background-img);
   background-repeat: no-repeat;
   background-size: cover;
