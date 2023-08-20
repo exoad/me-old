@@ -8,7 +8,6 @@ body {
   height: 100vh;
   width: 100%;
   position: relative;
-  background-color: var(--theme-bg);
   scroll-behavior: smooth;
   -ms-overflow-style: none;
   scrollbar-width: none;
