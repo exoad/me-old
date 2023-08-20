@@ -1,0 +1,52 @@
+@import "colors.css";
+.warning-icon {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: var(--theme-fg);
+  cursor: pointer;
+  border: 2px solid #e3c625;
+  padding: 6px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  height: 48px;
+  width: 48px;
+  animation: switchFgBgColors_warning_box 2s infinite alternate;
+}
+
+@keyframes switchFgBgColors_warning_box {
+  0%,
+  25% {
+    background-color: #000;
+    border: 2px solid #e3c625;
+  }
+  75%,
+  100% {
+    background-color: #e3c625;
+    border: 2px solid #000;
+  }
+}
+
+.warning-label {
+  width: 1.5em;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  fill: #e3c625;
+  animation: switchIconColor 2s infinite alternate;
+}
+
+@keyframes switchIconColor {
+  0%,
+  25% {
+    fill: #e3c625;
+  }
+  75%,
+  100% {
+    fill: #000;
+  }
+}
