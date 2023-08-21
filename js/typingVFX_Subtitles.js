@@ -22,7 +22,7 @@ let end = 0;
 
 const end_pause_delay = 200;
 const total_time = 800;
-const per_char_timeout = 50;
+const per_char_timeout = 30;
 
 function typeWriterEffect() {
   const greetingElement = document.getElementById("typing");

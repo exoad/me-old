@@ -27,6 +27,7 @@
   font-weight: 400;
   font-size: 28px;
   font-style: italic;
+  transition: all 40ms ease;
 }
 
 .typing::after {
@@ -35,17 +36,6 @@
   right: 0;
   animation: text_blink 0.85s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }
-
-@keyframes text_blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: var(--theme-fg);
-  }
-}
-
 
 @keyframes text_blink {
   from,

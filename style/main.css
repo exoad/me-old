@@ -13,6 +13,12 @@ body {
     opacity 0.65s ease-in-out;
 }
 
+a a:visited {
+  background-color: var(--semi-transparent);
+  color: var(--theme-pink);
+  text-decoration: none;
+}
+
 * {
   -webkit-user-select: none;
   -moz-user-select: none;
