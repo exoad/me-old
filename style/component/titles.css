@@ -34,7 +34,18 @@
   content: "|";
   position: relative;
   right: 0;
+  -webkit-animation: text_blink 0.85s cubic-bezier(0.19, 1, 0.22, 1) infinite;
   animation: text_blink 0.85s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+
+@-webkit-keyframes text_blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: var(--theme-fg);
+  }
 }
 
 @keyframes text_blink {

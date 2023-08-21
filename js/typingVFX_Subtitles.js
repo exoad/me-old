@@ -22,7 +22,7 @@ const subtitles = [
   "programming for practicality",
   "endorsing open source communities",
   "researching rendering optimizations",
-  "learning more shader as an art form"
+  "learning more shader as an art form",
 ];
 
 let i = Math.floor(Math.random() * subtitles.length);

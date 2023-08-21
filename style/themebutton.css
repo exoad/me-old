@@ -11,12 +11,20 @@
 
 #invertable-icon {
   width: 1.5em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
+  transition: -webkit-filter 0.65s ease;
   transition: filter 0.65s ease;
+  transition: filter 0.65s ease, -webkit-filter 0.65s ease;
 }
 
 #theme-icon {
   width: 1.5em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 

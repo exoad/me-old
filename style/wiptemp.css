@@ -14,7 +14,21 @@
   font-size: 15px;
   height: 48px;
   width: 48px;
+  -webkit-animation: switchFgBgColors_warning_box 2s infinite alternate;
   animation: switchFgBgColors_warning_box 2s infinite alternate;
+}
+
+@-webkit-keyframes switchFgBgColors_warning_box {
+  0%,
+  25% {
+    background-color: #000;
+    border: 2px solid #e3c625;
+  }
+  75%,
+  100% {
+    background-color: #e3c625;
+    border: 2px solid #000;
+  }
 }
 
 @keyframes switchFgBgColors_warning_box {
@@ -35,9 +49,22 @@
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   fill: #e3c625;
+  -webkit-animation: switchIconColor 2s infinite alternate;
   animation: switchIconColor 2s infinite alternate;
+}
+
+@-webkit-keyframes switchIconColor {
+  0%,
+  25% {
+    fill: #e3c625;
+  }
+  75%,
+  100% {
+    fill: #000;
+  }
 }
 
 @keyframes switchIconColor {

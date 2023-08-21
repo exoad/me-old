@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Gluten&display=swap");
 
 :root {
-  --theme-fg: #FFF;
+  --theme-fg: #fff;
   --theme-bg: #000;
   --theme-antifg: #000;
-  --theme-antibg: #FFF;
+  --theme-antibg: #fff;
   --theme-body-transparency: rgba(0, 0, 0, 0.205);
   --transparent: rgba(0, 0, 0, 0);
   --background-opacity: 50%;

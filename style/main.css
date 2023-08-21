@@ -9,8 +9,7 @@ body {
   scroll-behavior: smooth;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  transition: background-color 0.55s ease-in-out,
-    opacity 0.65s ease-in-out;
+  transition: background-color 0.55s ease-in-out, opacity 0.65s ease-in-out;
 }
 
 a a:visited {
@@ -57,20 +56,18 @@ body::-webkit-scrollbar {
   z-index: -1;
   -webkit-filter: brightness(var(--background-opacity));
   filter: brightness(var(--background-opacity));
-  transition: background-image 0.65s ease-in-out,
-    opacity 0.65s ease-in-out, -webkit-filter 0.65s ease-in-out;
-  transition: background-image 0.65s ease-in-out,
-    opacity 0.65s ease-in-out, filter 0.65s ease-in-out;
-  transition: background-image 0.65s ease-in-out,
-    opacity 0.65s ease-in-out, filter 0.65s ease-in-out,
+  transition: background-image 0.65s ease-in-out, opacity 0.65s ease-in-out,
     -webkit-filter 0.65s ease-in-out;
-  transition: background 0.65s ease-in-out,
-    opacity 0.65s ease-in-out, -webkit-filter 0.65s ease-in-out;
-  transition: background 0.65s ease-in-out,
-    opacity 0.65s ease-in-out, filter 0.65s ease-in-out;
-  transition: background 0.65s ease-in-out,
-    opacity 0.65s ease-in-out, filter 0.65s ease-in-out,
+  transition: background-image 0.65s ease-in-out, opacity 0.65s ease-in-out,
+    filter 0.65s ease-in-out;
+  transition: background-image 0.65s ease-in-out, opacity 0.65s ease-in-out,
+    filter 0.65s ease-in-out, -webkit-filter 0.65s ease-in-out;
+  transition: background 0.65s ease-in-out, opacity 0.65s ease-in-out,
     -webkit-filter 0.65s ease-in-out;
+  transition: background 0.65s ease-in-out, opacity 0.65s ease-in-out,
+    filter 0.65s ease-in-out;
+  transition: background 0.65s ease-in-out, opacity 0.65s ease-in-out,
+    filter 0.65s ease-in-out, -webkit-filter 0.65s ease-in-out;
 }
 
 .bg-image-transition {
