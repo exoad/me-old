@@ -11,5 +11,5 @@ function workerController_exoadProfilePage() {
 }
 
 function workerController_legalsPage() {
-  workerController_openURLCurrent("../legals");
+  workerController_openURLCurrent("../part/legals");
 }
