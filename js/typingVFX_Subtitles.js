@@ -1,26 +1,35 @@
 const subtitles = [
-  "I am a Systems Dev",
-  "I am learning Game Dev",
-  "Still learning WebDev",
-  "I create desktop apps",
-  "I main C/Java/Dart",
+  "systems dev",
+  "learning game dev",
+  "still learning webdev",
+  "creating desktop apps",
+  "maining c/java/dart",
+  "open to collaborate",
+  "exploring open source projects",
+  "juggling rust & c",
+  "reading more intel manuals",
+  "reading the SIMD instructions list",
+  "creating apps with glfw",
+  "learning about flutter",
+  "embracing the skia engine",
 ];
-let i = 0;
+
+let i = Math.floor(Math.random() * subtitles.length);
 let char_i = 0;
 let deleting = false;
 let paused = false;
 let end = 0;
 
-const end_pause_delay = 150;
-const total_time = 575;
-const per_char_timeout = 45;
+const end_pause_delay = 200;
+const total_time = 800;
+const per_char_timeout = 50;
 
 function typeWriterEffect() {
   const greetingElement = document.getElementById("typing");
 
   if (paused && Date.now() > end) {
     paused = false;
-    if (deleting) i = (i + 1) % subtitles.length;
+    if (deleting) i = Math.floor(Math.random() * subtitles.length);
     deleting = !deleting;
   }
 
