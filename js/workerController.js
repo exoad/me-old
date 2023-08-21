@@ -9,7 +9,3 @@ function workerController_openURLCurrent(url) {
 function workerController_exoadProfilePage() {
   workerController_openURL("https://github.com/exoad");
 }
-
-function workerController_legalsPage() {
-  workerController_openURLCurrent("/part/legals/index.html");
-}
