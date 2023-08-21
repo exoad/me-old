@@ -73,6 +73,8 @@ body::-webkit-scrollbar {
   transition: background-image 0.65s ease-in-out 150ms,
     opacity 0.65s ease-in-out 150ms, filter 0.65s ease-in-out 150ms,
     -webkit-filter 0.65s ease-in-out 150ms;
+  transition: background 0.65s ease-in-out 150ms,
+    opacity 0.65s ease-in-out 150ms, filter 0.65s ease-in-out 150ms;
 }
 
 .bg-image-transition {
