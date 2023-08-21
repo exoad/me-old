@@ -3,7 +3,7 @@ const subtitles = [
   "learning game dev",
   "still learning webdev",
   "creating desktop apps",
-  "maining c/java/dart",
+  "maining c/java/dart/haxe",
   "open to collaborate",
   "exploring open source projects",
   "juggling rust & c",
@@ -12,6 +12,17 @@ const subtitles = [
   "creating apps with glfw",
   "learning about flutter",
   "embracing the skia engine",
+  "still using swing!",
+  "exploring AR technology",
+  "studying ui & ux design",
+  "learning color theory",
+  "writing c for 5+ years",
+  "writing java for 3+ years",
+  "hobbyist programmer",
+  "programming for practicality",
+  "endorsing open source communities",
+  "researching rendering optimizations",
+  "learning more shader as an art form"
 ];
 
 let i = Math.floor(Math.random() * subtitles.length);
