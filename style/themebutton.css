@@ -11,18 +11,12 @@
 
 #invertable-icon {
   width: 1.5em;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
   user-select: none;
   transition: filter 0.65s ease;
 }
 
 #theme-icon {
   width: 1.5em;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
   user-select: none;
 }
 
@@ -45,4 +39,11 @@
 
 #theme-button:hover {
   background-color: rgba(190, 190, 190, 0.678);
+}
+
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
