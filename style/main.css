@@ -9,8 +9,8 @@ body {
   scroll-behavior: smooth;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  transition: background-color 0.55s ease-in-out 150ms,
-    opacity 0.65s ease-in-out 150ms;
+  transition: background-color 0.55s ease-in-out,
+    opacity 0.65s ease-in-out;
 }
 
 * {
@@ -51,20 +51,20 @@ body::-webkit-scrollbar {
   z-index: -1;
   -webkit-filter: brightness(var(--background-opacity));
   filter: brightness(var(--background-opacity));
-  transition: background-image 0.65s ease-in-out 150ms,
-    opacity 0.65s ease-in-out 150ms, -webkit-filter 0.65s ease-in-out 150ms;
-  transition: background-image 0.65s ease-in-out 150ms,
-    opacity 0.65s ease-in-out 150ms, filter 0.65s ease-in-out 150ms;
-  transition: background-image 0.65s ease-in-out 150ms,
-    opacity 0.65s ease-in-out 150ms, filter 0.65s ease-in-out 150ms,
-    -webkit-filter 0.65s ease-in-out 150ms;
-  transition: background 0.65s ease-in-out 150ms,
-    opacity 0.65s ease-in-out 150ms, -webkit-filter 0.65s ease-in-out 150ms;
-  transition: background 0.65s ease-in-out 150ms,
-    opacity 0.65s ease-in-out 150ms, filter 0.65s ease-in-out 150ms;
-  transition: background 0.65s ease-in-out 150ms,
-    opacity 0.65s ease-in-out 150ms, filter 0.65s ease-in-out 150ms,
-    -webkit-filter 0.65s ease-in-out 150ms;
+  transition: background-image 0.65s ease-in-out,
+    opacity 0.65s ease-in-out, -webkit-filter 0.65s ease-in-out;
+  transition: background-image 0.65s ease-in-out,
+    opacity 0.65s ease-in-out, filter 0.65s ease-in-out;
+  transition: background-image 0.65s ease-in-out,
+    opacity 0.65s ease-in-out, filter 0.65s ease-in-out,
+    -webkit-filter 0.65s ease-in-out;
+  transition: background 0.65s ease-in-out,
+    opacity 0.65s ease-in-out, -webkit-filter 0.65s ease-in-out;
+  transition: background 0.65s ease-in-out,
+    opacity 0.65s ease-in-out, filter 0.65s ease-in-out;
+  transition: background 0.65s ease-in-out,
+    opacity 0.65s ease-in-out, filter 0.65s ease-in-out,
+    -webkit-filter 0.65s ease-in-out;
 }
 
 .bg-image-transition {
