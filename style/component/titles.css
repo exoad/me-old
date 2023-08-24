@@ -1,5 +1,7 @@
 @import "../colors.css";
 
+@import "../macro.css";
+
 .titles-center {
   display: flex;
   justify-content: center;
@@ -7,18 +9,31 @@
   min-height: 100vh;
 }
 
-.titles {
-  text-align: center;
+.e,
+.x,
+.o,
+.a,
+.d {
+  color: var(--theme-fg);
+  text-shadow: 0 4px rgba(0, 0, 0, 0.69), 0 8px rgba(0, 0, 0, 0.69),
+    0 7px rgba(0, 0, 0, 0.69);
 }
 
-.title-text {
-  font-family: "Gluten";
-  letter-spacing: 4px;
-  font-weight: 700;
+.exoad-container {
+  border: 1px solid red;
+  display: flex;
   font-size: 88px;
-  color: var(--theme-fg);
-  text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.69);
+  letter-spacing: 4px;
   margin-bottom: 20px;
+  font-weight: 700;
+  font-family: "Gluten";
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.titles {
+  text-align: center;
 }
 
 .typing {
@@ -56,4 +71,41 @@
   50% {
     color: var(--theme-fg);
   }
+}
+
+@keyframes bounce {
+  10% {
+    transform: scale(1.25, 0.6) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.2) translateY(-66px);
+    color: var(--theme-pink);
+  }
+  40% {
+    color: var(--theme-fg);
+  }
+  0%,
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+.e {
+  animation: bounce 1.2s ease infinite;
+}
+
+.x {
+  animation: bounce 1.2s ease infinite 0.12s;
+}
+
+.o {
+  animation: bounce 1.2s ease infinite 0.22s;
+}
+
+.a {
+  animation: bounce 1.2s ease infinite 0.32s;
+}
+
+.d {
+  animation: bounce 1.2s ease infinite 0.42s;
 }
